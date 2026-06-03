@@ -11,9 +11,12 @@ sap.ui.define([
         // expose the formatter object so the XML view can call ".formatter.xxx"
         formatter: formatter,
 
-        // when a list item is tapped, bind the detail page to that order and show it
+        // when an order is selected, bind the detail page to it and show it
         onSelectOrder: function (oEvent) {
-            var oContext = oEvent.getSource().getBindingContext();
+            // works for both selectionChange (listItem param) and press (source)
+            var oItem = oEvent.getParameter("listItem") || oEvent.getSource();
+            var oContext = oItem && oItem.getBindingContext();
+            if (!oContext) { return; }
             var oDetail = this.byId("detailPage");
             oDetail.bindElement(oContext.getPath());
             this.byId("splitApp").toDetail(oDetail.getId());

@@ -26,14 +26,14 @@
                     <List id="orderList"
                           items="{/orders}"
                           mode="SingleSelectMaster"
+                          selectionChange=".onSelectOrder"
                           growing="true"
                           growingThreshold="20">
                         <ObjectListItem
                             title="{OrderId}"
                             number="{ path: 'OrderValue', formatter: '.formatter.money' }"
                             numberUnit="{Currency}"
-                            type="Active"
-                            press=".onSelectOrder">
+                            type="Active">
                             <attributes>
                                 <ObjectAttribute text="{Customer}"/>
                                 <ObjectAttribute text="{Region} · {Segment}"/>
