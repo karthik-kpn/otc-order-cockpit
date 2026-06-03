@@ -12,19 +12,69 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Confirmed",
       "steps": [
-        { "name": "Create Sales Order",  "time": "Apr 28, 09:12", "status": "Done" },
-        { "name": "Credit Check",        "time": "Apr 28, 09:40", "status": "Done" },
-        { "name": "Confirm Order",       "time": "Apr 28, 13:05", "status": "Done" },
-        { "name": "Check Availability",  "time": "Apr 28, 13:22", "status": "Done" },
-        { "name": "Create Delivery",     "time": "Apr 29, 08:10", "status": "Done" },
-        { "name": "Pick & Pack",         "time": "Apr 29, 15:48", "status": "Done" },
-        { "name": "Post Goods Issue",    "time": "Apr 29, 18:30", "status": "Done" },
-        { "name": "Create Invoice",      "time": "Apr 30, 02:00", "status": "Done" },
-        { "name": "Clear Payment",       "time": "May 21, 10:15", "status": "Done" }
+        {
+          "name": "Create Sales Order",
+          "time": "Apr 28, 09:12",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "Apr 28, 09:40",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "Apr 28, 13:05",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "Apr 28, 13:22",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "Apr 29, 08:10",
+          "status": "Done"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "Apr 29, 15:48",
+          "status": "Done"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "Apr 29, 18:30",
+          "status": "Done"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "Apr 30, 02:00",
+          "status": "Done"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "May 21, 10:15",
+          "status": "Done"
+        }
       ],
       "items": [
-        { "Material": "MAT-4471", "Description": "Hydraulic Pump Assembly", "Qty": 12, "Plant": "2010 Chicago", "ATP": "Confirmed" },
-        { "Material": "MAT-8820", "Description": "Pressure Sensor Kit",      "Qty": 40, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-4471",
+          "Description": "Hydraulic Pump Assembly",
+          "Qty": 12,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 12
+        },
+        {
+          "Material": "MAT-8820",
+          "Description": "Pressure Sensor Kit",
+          "Qty": 40,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 40
+        }
       ]
     },
     {
@@ -39,19 +89,69 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Backorder",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 09, 10:02", "status": "Done" },
-        { "name": "Credit Check",        "time": "May 09, 10:25", "status": "Done" },
-        { "name": "Confirm Order",       "time": "May 09, 12:40", "status": "Done" },
-        { "name": "Check Availability",  "time": "May 09, 12:58", "status": "Done" },
-        { "name": "Create Delivery",     "time": "waiting on stock", "status": "In Process" },
-        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
-        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 09, 10:02",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 09, 10:25",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 09, 12:40",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 09, 12:58",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "waiting on stock",
+          "status": "In Process"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-1190", "Description": "Aluminium Housing",   "Qty": 25, "Plant": "1010 Hamburg", "ATP": "Backorder" },
-        { "Material": "MAT-1195", "Description": "Mounting Bracket Set","Qty": 25, "Plant": "1010 Hamburg", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-1190",
+          "Description": "Aluminium Housing",
+          "Qty": 25,
+          "Plant": "1010 Hamburg",
+          "ATP": "Backorder",
+          "Available": 0
+        },
+        {
+          "Material": "MAT-1195",
+          "Description": "Mounting Bracket Set",
+          "Qty": 25,
+          "Plant": "1010 Hamburg",
+          "ATP": "Confirmed",
+          "Available": 25
+        }
       ]
     },
     {
@@ -66,18 +166,61 @@
       "CreditStatus": "Blocked",
       "ATPStatus": "Confirmed",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 14, 08:31", "status": "Done" },
-        { "name": "Credit Check",        "time": "May 14, 08:55", "status": "Done" },
-        { "name": "Confirm Order",       "time": "credit hold",   "status": "Blocked" },
-        { "name": "Check Availability",  "time": "—", "status": "Pending" },
-        { "name": "Create Delivery",     "time": "—", "status": "Pending" },
-        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
-        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 14, 08:31",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 14, 08:55",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "credit hold",
+          "status": "Blocked"
+        },
+        {
+          "name": "Check Availability",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-9001", "Description": "Industrial Servo Drive", "Qty": 8, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-9001",
+          "Description": "Industrial Servo Drive",
+          "Qty": 8,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 8
+        }
       ]
     },
     {
@@ -92,19 +235,69 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Confirmed",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 02, 11:14", "status": "Done" },
-        { "name": "Credit Check",        "time": "May 02, 11:33", "status": "Done" },
-        { "name": "Confirm Order",       "time": "May 02, 14:20", "status": "Done" },
-        { "name": "Check Availability",  "time": "May 02, 14:39", "status": "Done" },
-        { "name": "Create Delivery",     "time": "May 03, 09:05", "status": "Done" },
-        { "name": "Pick & Pack",         "time": "May 03, 16:22", "status": "Done" },
-        { "name": "Post Goods Issue",    "time": "in progress",   "status": "In Process" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 02, 11:14",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 02, 11:33",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 02, 14:20",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 02, 14:39",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "May 03, 09:05",
+          "status": "Done"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "May 03, 16:22",
+          "status": "Done"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "in progress",
+          "status": "In Process"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-3320", "Description": "Control Panel Unit", "Qty": 15, "Plant": "3010 Singapore", "ATP": "Confirmed" },
-        { "Material": "MAT-3325", "Description": "Wiring Harness",     "Qty": 15, "Plant": "3010 Singapore", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-3320",
+          "Description": "Control Panel Unit",
+          "Qty": 15,
+          "Plant": "3010 Singapore",
+          "ATP": "Confirmed",
+          "Available": 15
+        },
+        {
+          "Material": "MAT-3325",
+          "Description": "Wiring Harness",
+          "Qty": 15,
+          "Plant": "3010 Singapore",
+          "ATP": "Confirmed",
+          "Available": 15
+        }
       ]
     },
     {
@@ -119,18 +312,61 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Partial",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 16, 09:48", "status": "Done" },
-        { "name": "Credit Check",        "time": "May 16, 10:01", "status": "Done" },
-        { "name": "Confirm Order",       "time": "May 16, 11:30", "status": "Done" },
-        { "name": "Check Availability",  "time": "May 16, 11:47", "status": "Done" },
-        { "name": "Create Delivery",     "time": "partial qty",   "status": "In Process" },
-        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
-        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 16, 09:48",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 16, 10:01",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 16, 11:30",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 16, 11:47",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "partial qty",
+          "status": "In Process"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-2204", "Description": "Filtration Cartridge", "Qty": 60, "Plant": "1010 Hamburg", "ATP": "Partial" }
+        {
+          "Material": "MAT-2204",
+          "Description": "Filtration Cartridge",
+          "Qty": 60,
+          "Plant": "1010 Hamburg",
+          "ATP": "Partial",
+          "Available": 35
+        }
       ]
     },
     {
@@ -145,18 +381,61 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Confirmed",
       "steps": [
-        { "name": "Create Sales Order",  "time": "Apr 20, 08:05", "status": "Done" },
-        { "name": "Credit Check",        "time": "Apr 20, 08:30", "status": "Done" },
-        { "name": "Confirm Order",       "time": "Apr 20, 10:15", "status": "Done" },
-        { "name": "Check Availability",  "time": "Apr 20, 10:31", "status": "Done" },
-        { "name": "Create Delivery",     "time": "Apr 21, 09:00", "status": "Done" },
-        { "name": "Pick & Pack",         "time": "Apr 21, 14:12", "status": "Done" },
-        { "name": "Post Goods Issue",    "time": "Apr 21, 17:45", "status": "Done" },
-        { "name": "Create Invoice",      "time": "Apr 22, 02:00", "status": "Done" },
-        { "name": "Clear Payment",       "time": "May 12, 09:30", "status": "Done" }
+        {
+          "name": "Create Sales Order",
+          "time": "Apr 20, 08:05",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "Apr 20, 08:30",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "Apr 20, 10:15",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "Apr 20, 10:31",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "Apr 21, 09:00",
+          "status": "Done"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "Apr 21, 14:12",
+          "status": "Done"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "Apr 21, 17:45",
+          "status": "Done"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "Apr 22, 02:00",
+          "status": "Done"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "May 12, 09:30",
+          "status": "Done"
+        }
       ],
       "items": [
-        { "Material": "MAT-7715", "Description": "Edge Gateway Device", "Qty": 30, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-7715",
+          "Description": "Edge Gateway Device",
+          "Qty": 30,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 30
+        }
       ]
     },
     {
@@ -171,18 +450,61 @@
       "CreditStatus": "In Review",
       "ATPStatus": "Confirmed",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 18, 13:22", "status": "Done" },
-        { "name": "Credit Check",        "time": "under review",  "status": "In Process" },
-        { "name": "Confirm Order",       "time": "—", "status": "Pending" },
-        { "name": "Check Availability",  "time": "—", "status": "Pending" },
-        { "name": "Create Delivery",     "time": "—", "status": "Pending" },
-        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
-        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 18, 13:22",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "under review",
+          "status": "In Process"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Check Availability",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-5050", "Description": "Retail Scanner",  "Qty": 10, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-5050",
+          "Description": "Retail Scanner",
+          "Qty": 10,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 10
+        }
       ]
     },
     {
@@ -197,19 +519,223 @@
       "CreditStatus": "Cleared",
       "ATPStatus": "Backorder",
       "steps": [
-        { "name": "Create Sales Order",  "time": "May 11, 09:00", "status": "Done" },
-        { "name": "Credit Check",        "time": "May 11, 09:21", "status": "Done" },
-        { "name": "Confirm Order",       "time": "May 11, 11:10", "status": "Done" },
-        { "name": "Check Availability",  "time": "May 11, 11:29", "status": "Done" },
-        { "name": "Create Delivery",     "time": "waiting on stock", "status": "In Process" },
-        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
-        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
-        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
-        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+        {
+          "name": "Create Sales Order",
+          "time": "May 11, 09:00",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 11, 09:21",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 11, 11:10",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 11, 11:29",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "waiting on stock",
+          "status": "In Process"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
       ],
       "items": [
-        { "Material": "MAT-6610", "Description": "Packaging Line Module", "Qty": 4, "Plant": "3010 Singapore", "ATP": "Backorder" },
-        { "Material": "MAT-6615", "Description": "Conveyor Belt Section",  "Qty": 20, "Plant": "3010 Singapore", "ATP": "Confirmed" }
+        {
+          "Material": "MAT-6610",
+          "Description": "Packaging Line Module",
+          "Qty": 4,
+          "Plant": "3010 Singapore",
+          "ATP": "Backorder",
+          "Available": 0
+        },
+        {
+          "Material": "MAT-6615",
+          "Description": "Conveyor Belt Section",
+          "Qty": 20,
+          "Plant": "3010 Singapore",
+          "ATP": "Confirmed",
+          "Available": 20
+        }
+      ]
+    },
+    {
+      "OrderId": "SO-100312",
+      "Customer": "Vandelay Industries",
+      "Region": "NA",
+      "Segment": "Strategic",
+      "OrderValue": 76000,
+      "Currency": "USD",
+      "OrderDate": "2026-05-22",
+      "OverallStatus": "On Track",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        {
+          "name": "Create Sales Order",
+          "time": "May 22, 08:05",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 22, 08:18",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 22, 08:40",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 22, 08:52",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "May 22, 10:15",
+          "status": "Done"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "May 22, 12:30",
+          "status": "Done"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "May 22, 14:05 (rush)",
+          "status": "Done"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "May 22, 14:30",
+          "status": "Done"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
+      ],
+      "items": [
+        {
+          "Material": "MAT-8400",
+          "Description": "Express Drive Kit",
+          "Qty": 20,
+          "Plant": "2010 Chicago",
+          "ATP": "Confirmed",
+          "Available": 20
+        }
+      ]
+    },
+    {
+      "OrderId": "SO-100315",
+      "Customer": "Cyberdyne Systems",
+      "Region": "EU",
+      "Segment": "Strategic",
+      "OrderValue": 184000,
+      "Currency": "EUR",
+      "OrderDate": "2026-05-20",
+      "OverallStatus": "At Risk",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Partial",
+      "steps": [
+        {
+          "name": "Create Sales Order",
+          "time": "May 20, 09:00",
+          "status": "Done"
+        },
+        {
+          "name": "Credit Check",
+          "time": "May 20, 09:15",
+          "status": "Done"
+        },
+        {
+          "name": "Confirm Order",
+          "time": "May 20, 11:00",
+          "status": "Done"
+        },
+        {
+          "name": "Check Availability",
+          "time": "May 20, 11:20",
+          "status": "Done"
+        },
+        {
+          "name": "Create Delivery",
+          "time": "awaiting stock",
+          "status": "In Process"
+        },
+        {
+          "name": "Pick & Pack",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Post Goods Issue",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Create Invoice",
+          "time": "\u2014",
+          "status": "Pending"
+        },
+        {
+          "name": "Clear Payment",
+          "time": "\u2014",
+          "status": "Pending"
+        }
+      ],
+      "items": [
+        {
+          "Material": "MAT-9100",
+          "Description": "Robotic Arm Controller",
+          "Qty": 10,
+          "Plant": "1010 Hamburg",
+          "ATP": "Confirmed",
+          "Available": 10
+        },
+        {
+          "Material": "MAT-9105",
+          "Description": "Servo Motor Pack",
+          "Qty": 50,
+          "Plant": "1010 Hamburg",
+          "ATP": "Partial",
+          "Available": 30
+        },
+        {
+          "Material": "MAT-9110",
+          "Description": "Vision Sensor Module",
+          "Qty": 25,
+          "Plant": "1010 Hamburg",
+          "ATP": "Backorder",
+          "Available": 0
+        }
       ]
     }
   ]

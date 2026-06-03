@@ -16,6 +16,15 @@ sap.ui.define([], function () {
             return { "Confirmed": "Success", "Partial": "Warning",
                      "Backorder": "Error" }[s] || "None";
         },
+        // requested minus confirmed = quantity still to be sourced
+        shortfall: function (qty, available) {
+            var s = Number(qty) - Number(available);
+            return (isNaN(s) || s <= 0) ? "\u2014" : String(s);
+        },
+        // red when there is a shortfall, otherwise neutral
+        shortfallState: function (qty, available) {
+            return (Number(qty) - Number(available)) > 0 ? "Error" : "None";
+        },
         stepState: function (s) {
             return { "Done": "Success", "In Process": "Warning",
                      "Blocked": "Error", "Pending": "None" }[s] || "None";

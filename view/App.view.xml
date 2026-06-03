@@ -108,16 +108,22 @@
                             <columns>
                                 <Column><header><Text text="Material"/></header></Column>
                                 <Column><header><Text text="Description"/></header></Column>
-                                <Column hAlign="End"><header><Text text="Qty"/></header></Column>
                                 <Column><header><Text text="Plant"/></header></Column>
+                                <Column hAlign="End"><header><Text text="Required"/></header></Column>
+                                <Column hAlign="End"><header><Text text="Confirmed"/></header></Column>
+                                <Column hAlign="End"><header><Text text="To Source"/></header></Column>
                                 <Column hAlign="End"><header><Text text="Availability"/></header></Column>
                             </columns>
                             <ColumnListItem>
                                 <cells>
                                     <Text text="{Material}"/>
                                     <Text text="{Description}"/>
-                                    <Text text="{Qty}"/>
                                     <Text text="{Plant}"/>
+                                    <Text text="{Qty}"/>
+                                    <Text text="{Available}"/>
+                                    <ObjectStatus
+                                        text="{ parts: ['Qty','Available'], formatter: '.formatter.shortfall' }"
+                                        state="{ parts: ['Qty','Available'], formatter: '.formatter.shortfallState' }"/>
                                     <ObjectStatus text="{ATP}"
                                         state="{ path: 'ATP', formatter: '.formatter.atpState' }"/>
                                 </cells>
