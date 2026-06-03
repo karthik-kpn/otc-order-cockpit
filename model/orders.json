@@ -1,0 +1,216 @@
+{
+  "orders": [
+    {
+      "OrderId": "SO-100231",
+      "Customer": "Globex Manufacturing",
+      "Region": "NA",
+      "Segment": "Strategic",
+      "OrderValue": 142000,
+      "Currency": "USD",
+      "OrderDate": "2026-04-28",
+      "OverallStatus": "Completed",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "Apr 28, 09:12", "status": "Done" },
+        { "name": "Credit Check",        "time": "Apr 28, 09:40", "status": "Done" },
+        { "name": "Confirm Order",       "time": "Apr 28, 13:05", "status": "Done" },
+        { "name": "Check Availability",  "time": "Apr 28, 13:22", "status": "Done" },
+        { "name": "Create Delivery",     "time": "Apr 29, 08:10", "status": "Done" },
+        { "name": "Pick & Pack",         "time": "Apr 29, 15:48", "status": "Done" },
+        { "name": "Post Goods Issue",    "time": "Apr 29, 18:30", "status": "Done" },
+        { "name": "Create Invoice",      "time": "Apr 30, 02:00", "status": "Done" },
+        { "name": "Clear Payment",       "time": "May 21, 10:15", "status": "Done" }
+      ],
+      "items": [
+        { "Material": "MAT-4471", "Description": "Hydraulic Pump Assembly", "Qty": 12, "Plant": "2010 Chicago", "ATP": "Confirmed" },
+        { "Material": "MAT-8820", "Description": "Pressure Sensor Kit",      "Qty": 40, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100242",
+      "Customer": "Initech Components",
+      "Region": "EU",
+      "Segment": "Mid-Market",
+      "OrderValue": 38500,
+      "Currency": "EUR",
+      "OrderDate": "2026-05-09",
+      "OverallStatus": "At Risk",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Backorder",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 09, 10:02", "status": "Done" },
+        { "name": "Credit Check",        "time": "May 09, 10:25", "status": "Done" },
+        { "name": "Confirm Order",       "time": "May 09, 12:40", "status": "Done" },
+        { "name": "Check Availability",  "time": "May 09, 12:58", "status": "Done" },
+        { "name": "Create Delivery",     "time": "waiting on stock", "status": "In Process" },
+        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
+        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-1190", "Description": "Aluminium Housing",   "Qty": 25, "Plant": "1010 Hamburg", "ATP": "Backorder" },
+        { "Material": "MAT-1195", "Description": "Mounting Bracket Set","Qty": 25, "Plant": "1010 Hamburg", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100256",
+      "Customer": "Stark Industries",
+      "Region": "NA",
+      "Segment": "Strategic",
+      "OrderValue": 268000,
+      "Currency": "USD",
+      "OrderDate": "2026-05-14",
+      "OverallStatus": "Blocked",
+      "CreditStatus": "Blocked",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 14, 08:31", "status": "Done" },
+        { "name": "Credit Check",        "time": "May 14, 08:55", "status": "Done" },
+        { "name": "Confirm Order",       "time": "credit hold",   "status": "Blocked" },
+        { "name": "Check Availability",  "time": "—", "status": "Pending" },
+        { "name": "Create Delivery",     "time": "—", "status": "Pending" },
+        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
+        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-9001", "Description": "Industrial Servo Drive", "Qty": 8, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100260",
+      "Customer": "Wayne Enterprises",
+      "Region": "APAC",
+      "Segment": "Mid-Market",
+      "OrderValue": 54000,
+      "Currency": "USD",
+      "OrderDate": "2026-05-02",
+      "OverallStatus": "On Track",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 02, 11:14", "status": "Done" },
+        { "name": "Credit Check",        "time": "May 02, 11:33", "status": "Done" },
+        { "name": "Confirm Order",       "time": "May 02, 14:20", "status": "Done" },
+        { "name": "Check Availability",  "time": "May 02, 14:39", "status": "Done" },
+        { "name": "Create Delivery",     "time": "May 03, 09:05", "status": "Done" },
+        { "name": "Pick & Pack",         "time": "May 03, 16:22", "status": "Done" },
+        { "name": "Post Goods Issue",    "time": "in progress",   "status": "In Process" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-3320", "Description": "Control Panel Unit", "Qty": 15, "Plant": "3010 Singapore", "ATP": "Confirmed" },
+        { "Material": "MAT-3325", "Description": "Wiring Harness",     "Qty": 15, "Plant": "3010 Singapore", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100271",
+      "Customer": "Umbrella Corp",
+      "Region": "EU",
+      "Segment": "SMB",
+      "OrderValue": 7200,
+      "Currency": "EUR",
+      "OrderDate": "2026-05-16",
+      "OverallStatus": "On Track",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Partial",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 16, 09:48", "status": "Done" },
+        { "name": "Credit Check",        "time": "May 16, 10:01", "status": "Done" },
+        { "name": "Confirm Order",       "time": "May 16, 11:30", "status": "Done" },
+        { "name": "Check Availability",  "time": "May 16, 11:47", "status": "Done" },
+        { "name": "Create Delivery",     "time": "partial qty",   "status": "In Process" },
+        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
+        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-2204", "Description": "Filtration Cartridge", "Qty": 60, "Plant": "1010 Hamburg", "ATP": "Partial" }
+      ]
+    },
+    {
+      "OrderId": "SO-100288",
+      "Customer": "Hooli Tech",
+      "Region": "NA",
+      "Segment": "Mid-Market",
+      "OrderValue": 31000,
+      "Currency": "USD",
+      "OrderDate": "2026-04-20",
+      "OverallStatus": "Completed",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "Apr 20, 08:05", "status": "Done" },
+        { "name": "Credit Check",        "time": "Apr 20, 08:30", "status": "Done" },
+        { "name": "Confirm Order",       "time": "Apr 20, 10:15", "status": "Done" },
+        { "name": "Check Availability",  "time": "Apr 20, 10:31", "status": "Done" },
+        { "name": "Create Delivery",     "time": "Apr 21, 09:00", "status": "Done" },
+        { "name": "Pick & Pack",         "time": "Apr 21, 14:12", "status": "Done" },
+        { "name": "Post Goods Issue",    "time": "Apr 21, 17:45", "status": "Done" },
+        { "name": "Create Invoice",      "time": "Apr 22, 02:00", "status": "Done" },
+        { "name": "Clear Payment",       "time": "May 12, 09:30", "status": "Done" }
+      ],
+      "items": [
+        { "Material": "MAT-7715", "Description": "Edge Gateway Device", "Qty": 30, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100295",
+      "Customer": "Acme Retail",
+      "Region": "NA",
+      "Segment": "SMB",
+      "OrderValue": 4800,
+      "Currency": "USD",
+      "OrderDate": "2026-05-18",
+      "OverallStatus": "On Track",
+      "CreditStatus": "In Review",
+      "ATPStatus": "Confirmed",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 18, 13:22", "status": "Done" },
+        { "name": "Credit Check",        "time": "under review",  "status": "In Process" },
+        { "name": "Confirm Order",       "time": "—", "status": "Pending" },
+        { "name": "Check Availability",  "time": "—", "status": "Pending" },
+        { "name": "Create Delivery",     "time": "—", "status": "Pending" },
+        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
+        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-5050", "Description": "Retail Scanner",  "Qty": 10, "Plant": "2010 Chicago", "ATP": "Confirmed" }
+      ]
+    },
+    {
+      "OrderId": "SO-100301",
+      "Customer": "Soylent Foods",
+      "Region": "APAC",
+      "Segment": "Strategic",
+      "OrderValue": 119000,
+      "Currency": "USD",
+      "OrderDate": "2026-05-11",
+      "OverallStatus": "At Risk",
+      "CreditStatus": "Cleared",
+      "ATPStatus": "Backorder",
+      "steps": [
+        { "name": "Create Sales Order",  "time": "May 11, 09:00", "status": "Done" },
+        { "name": "Credit Check",        "time": "May 11, 09:21", "status": "Done" },
+        { "name": "Confirm Order",       "time": "May 11, 11:10", "status": "Done" },
+        { "name": "Check Availability",  "time": "May 11, 11:29", "status": "Done" },
+        { "name": "Create Delivery",     "time": "waiting on stock", "status": "In Process" },
+        { "name": "Pick & Pack",         "time": "—", "status": "Pending" },
+        { "name": "Post Goods Issue",    "time": "—", "status": "Pending" },
+        { "name": "Create Invoice",      "time": "—", "status": "Pending" },
+        { "name": "Clear Payment",       "time": "—", "status": "Pending" }
+      ],
+      "items": [
+        { "Material": "MAT-6610", "Description": "Packaging Line Module", "Qty": 4, "Plant": "3010 Singapore", "ATP": "Backorder" },
+        { "Material": "MAT-6615", "Description": "Conveyor Belt Section",  "Qty": 20, "Plant": "3010 Singapore", "ATP": "Confirmed" }
+      ]
+    }
+  ]
+}

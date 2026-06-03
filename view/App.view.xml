@@ -1,0 +1,132 @@
+<mvc:View
+    controllerName="otccockpit.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+    height="100%">
+
+    <SplitApp id="splitApp" mode="StretchCompressMode">
+
+        <!-- ============ MASTER: list of sales orders ============ -->
+        <masterPages>
+            <Page id="master" title="Sales Orders">
+                <subHeader>
+                    <Bar>
+                        <contentMiddle>
+                            <SearchField
+                                width="100%"
+                                placeholder="Search order or customer"
+                                liveChange=".onSearch"
+                                search=".onSearch"/>
+                        </contentMiddle>
+                    </Bar>
+                </subHeader>
+                <content>
+                    <List id="orderList"
+                          items="{/orders}"
+                          mode="SingleSelectMaster"
+                          growing="true"
+                          growingThreshold="20">
+                        <ObjectListItem
+                            title="{OrderId}"
+                            number="{ path: 'OrderValue', formatter: '.formatter.money' }"
+                            numberUnit="{Currency}"
+                            type="Active"
+                            press=".onSelectOrder">
+                            <attributes>
+                                <ObjectAttribute text="{Customer}"/>
+                                <ObjectAttribute text="{Region} · {Segment}"/>
+                            </attributes>
+                            <firstStatus>
+                                <ObjectStatus
+                                    text="{OverallStatus}"
+                                    state="{ path: 'OverallStatus', formatter: '.formatter.statusState' }"/>
+                            </firstStatus>
+                        </ObjectListItem>
+                    </List>
+                </content>
+            </Page>
+        </masterPages>
+
+        <!-- ============ DETAIL ============ -->
+        <detailPages>
+
+            <!-- shown until an order is selected -->
+            <Page id="detailEmpty" title="OTC Order Cockpit">
+                <content>
+                    <FlexBox height="100%" direction="Column"
+                             alignItems="Center" justifyContent="Center">
+                        <core:Icon src="sap-icon://sales-order" size="3rem" color="#7a8aa0"/>
+                        <Title text="Select a sales order" level="H3" class="sapUiSmallMarginTop"/>
+                        <Text text="Pick an order on the left to see its Order-to-Cash journey."
+                              class="sapUiSmallMarginTop"/>
+                    </FlexBox>
+                </content>
+            </Page>
+
+            <!-- the order detail (bound on selection) -->
+            <Page id="detailPage" title="{OrderId}">
+                <content>
+                    <ObjectHeader
+                        title="{OrderId}"
+                        intro="{Customer}"
+                        number="{ path: 'OrderValue', formatter: '.formatter.money' }"
+                        numberUnit="{Currency}"
+                        responsive="true">
+                        <attributes>
+                            <ObjectAttribute title="Region" text="{Region}"/>
+                            <ObjectAttribute title="Segment" text="{Segment}"/>
+                            <ObjectAttribute title="Order Date" text="{OrderDate}"/>
+                        </attributes>
+                        <statuses>
+                            <ObjectStatus title="Fulfillment" text="{OverallStatus}"
+                                state="{ path: 'OverallStatus', formatter: '.formatter.statusState' }"/>
+                            <ObjectStatus title="Credit" text="{CreditStatus}"
+                                state="{ path: 'CreditStatus', formatter: '.formatter.creditState' }"/>
+                            <ObjectStatus title="Availability" text="{ATPStatus}"
+                                state="{ path: 'ATPStatus', formatter: '.formatter.atpState' }"/>
+                        </statuses>
+                    </ObjectHeader>
+
+                    <Panel headerText="Order-to-Cash Journey" width="auto"
+                           class="sapUiResponsiveMargin">
+                        <List items="{steps}" showSeparators="Inner">
+                            <StandardListItem
+                                icon="{ path: 'status', formatter: '.formatter.stepIcon' }"
+                                iconInset="false"
+                                title="{name}"
+                                description="{time}"
+                                info="{status}"
+                                infoState="{ path: 'status', formatter: '.formatter.stepState' }"/>
+                        </List>
+                    </Panel>
+
+                    <Panel headerText="Line Items" width="auto"
+                           class="sapUiResponsiveMargin">
+                        <Table items="{items}">
+                            <columns>
+                                <Column><header><Text text="Material"/></header></Column>
+                                <Column><header><Text text="Description"/></header></Column>
+                                <Column hAlign="End"><header><Text text="Qty"/></header></Column>
+                                <Column><header><Text text="Plant"/></header></Column>
+                                <Column hAlign="End"><header><Text text="Availability"/></header></Column>
+                            </columns>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{Material}"/>
+                                    <Text text="{Description}"/>
+                                    <Text text="{Qty}"/>
+                                    <Text text="{Plant}"/>
+                                    <ObjectStatus text="{ATP}"
+                                        state="{ path: 'ATP', formatter: '.formatter.atpState' }"/>
+                                </cells>
+                            </ColumnListItem>
+                        </Table>
+                    </Panel>
+                </content>
+            </Page>
+
+        </detailPages>
+    </SplitApp>
+</mvc:View>

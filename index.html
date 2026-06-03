@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTC Order Cockpit</title>
+    <style>
+        html, body, #content, #container { height: 100%; margin: 0; padding: 0; }
+    </style>
+    <!--
+      Freestyle SAPUI5 app. OpenUI5 is loaded from the public CDN at runtime,
+      so the app is fully static — no build step, no server-side anything.
+      ComponentSupport boots the Component declared on the <div> below.
+    -->
+    <script
+        id="sap-ui-bootstrap"
+        src="https://sdk.openui5.org/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-compat-version="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-resourceroots='{"otccockpit": "./"}'
+        data-sap-ui-on-init="module:sap/ui/core/ComponentSupport">
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+    <div
+        data-sap-ui-component
+        data-name="otccockpit"
+        data-id="container"
+        data-settings='{"id": "otccockpit"}'
+        style="height: 100%;">
+    </div>
+</body>
+</html>
